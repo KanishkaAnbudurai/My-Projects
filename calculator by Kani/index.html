@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-Kanishka</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="position: absolute; top: 5%; font-size: 50px; color: rgb(182, 96, 96);">CALCULATOR</h1>
+    <div class="calculator">
+            <div class="top">
+                <input type="text" name="top" id="box" style="background-color: rgb(53, 126, 185); height: 60px; font-size: 30px;">
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="Clear()" style="width: 140px; background-color: rgb(182, 96, 96);">
+                <input type="button" value="DE" onclick="Delete()">
+                <input type="button" value="/"  onclick="operation('/')">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="ans('1')">
+                <input type="button" value="2" onclick="ans('2')">
+                <input type="button" value="3" onclick="ans('3')">
+                <input type="button" value="*" onclick="operation('*')">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="ans('4')">
+                <input type="button" value="5" onclick="ans('5')">
+                <input type="button" value="6" onclick="ans('6')">
+                <input type="button" value="-" onclick="operation('-')">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="ans('7')">
+                <input type="button" value="8" onclick="ans('8')">
+                <input type="button" value="9" onclick="ans('9')">
+                <input type="button" value="+" onclick="operation('+')">
+            </div>
+            <div>
+                <input type="button" value="0" onclick="ans('0')">
+                <input type="button" value="." onclick="ans('.')">
+                <input type="button" value="=" onclick="Result()" style="width: 140px; background-color: rgb(182, 96, 96); ">
+            </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
