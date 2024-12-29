@@ -9,8 +9,9 @@
 <body>
     <h1 style="position: absolute; top: 5%; font-size: 50px; color: rgb(182, 96, 96);">CALCULATOR</h1>
     <div class="calculator">
+        <form>
             <div class="top">
-                <input type="text" name="top" id="box" style="background-color: rgb(53, 126, 185); height: 60px; font-size: 30px;">
+                <input type="text" name="top" id="box" placeholder="0"> 
             </div>
             <div>
                 <input type="button" value="AC" onclick="Clear()" style="width: 140px; background-color: rgb(182, 96, 96);">
@@ -40,6 +41,7 @@
                 <input type="button" value="." onclick="ans('.')">
                 <input type="button" value="=" onclick="Result()" style="width: 140px; background-color: rgb(182, 96, 96); ">
             </div>
+        </form>
     </div>
     <script src="./script.js"></script>
 </body>
